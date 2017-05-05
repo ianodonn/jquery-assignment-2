@@ -20,5 +20,5 @@ function updateUserInfo(index, user) {
     $user.find(".company").find(".state").text(user.company.address.state);
     $user.find(".company").find(".zip").text(user.company.address.zip);
     $user.find(".company").find("a").text(user.company.email).attr("href", "mailto:" + user.company.email);
-
+    $user.css("background-color", user.favoriteColor);
 }
