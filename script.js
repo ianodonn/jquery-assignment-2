@@ -13,6 +13,7 @@ function updateUserInfo(index, user) {
     var $user = $(".user-profile").eq(index);
 
     $user.find(".thumbnail").find("img").attr("src", user.picture);
+        $user.find(".caption").find("h3").text(user.name.first + " " + user.name.last);
 
 
 }
